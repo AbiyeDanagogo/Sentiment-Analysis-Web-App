@@ -37,7 +37,7 @@ def predict():
         
     proba = model.predict_proba([tweet])[0, 1]
     
-    return 'positive sentiment: {}'.format(proba)
+    return 'This text has a positive sentiment of {}%'.format(round(proba*100, 0))
 
     
 

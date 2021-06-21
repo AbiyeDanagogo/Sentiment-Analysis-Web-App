@@ -2,18 +2,19 @@
 <html>
     <head>
         <title>Sentiment Analyser</title>
-        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
         <header><h1>Sentiment Analyser</h1></header>
         
-        <h2>Enter Text</h2>
-
-        <form id="input" method="post" action="predict">
-            <input type="text" name="text" value="Enter text here" style="width: 300px; height: 100px;"> <br>
-            <input type="submit" value="Submit">
-        </form>
-
-    
+        <div>
+            <form id="input" method="post" action="predict">
+                <input class="text_input" type="text" name="text" placeholder="Enter Text Here" style="width: 400px; height: 100px;"> <br>
+                <input class="button" type="submit" value="Submit">
+            </form>
+        </div>
+            
+        
+            
     </body>
 </html>
